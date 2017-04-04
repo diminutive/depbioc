@@ -30,3 +30,11 @@ runa()
 ```
 
 How to make this work on Travis?
+
+Needed `r: bioc-release` in travis.yml, despite this not being a Bioconductor package.
+
+<https://docs.travis-ci.com/user/languages/>
+
+I don't see anything in Writing R Extensions, and the r-travis doc and the stackoverflow post above was what I needed.
+
+Appreciate any other known links.
