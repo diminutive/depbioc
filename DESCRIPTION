@@ -1,0 +1,14 @@
+Package: depbioc
+Title: Depends on Bioconductor package
+Version: 0.0.0.9000
+Authors@R: person("Michael D.","Sumner", role = c("aut", "cre"), email =
+    "mdsumner@gmail.com")
+Description: This package imports rhdf5 from Bioconductor.
+Depends: R (>= 3.3.2)
+Imports: rhdf5
+Suggests: BiocInstaller, zlibbioc
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+biocViews:
+RoxygenNote: 6.0.1

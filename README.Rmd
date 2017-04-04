@@ -1,0 +1,46 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+
+
+How to depend on Bioconductor? 
+
+The answer: http://stackoverflow.com/questions/14343817/cran-package-depends-on-bioconductor-package-installing-error
+
+We have to do this: 
+
+```{r,eval=FALSE}
+source("http://bioconductor.org/biocLite.R")
+```
+
+Then add `biocViews:` to the DESCRIPTION, and the Imports/Suggests we need (`rhdf5` in Imports here and `BiocInstaller` and `zlibbioc` in Suggests). 
+
+
+Then run these: 
+
+```{r,eval=FALSE}
+devtools::install_deps(dependencies = "Suggests")
+devtools::install_deps(dependencies = "Imports")
+```
+
+Then this will work: 
+
+```{r}
+library(depbioc)
+runa()
+```
+
+How to make this work on Travis? 
+
+
