@@ -1,5 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+[![Travis-CI Build Status](https://travis-ci.org/dis-organization/depbioc.svg?branch=master)](https://travis-ci.org/dis-organization/depbioc)
+
 How to depend on Bioconductor?
 
 The answer: <http://stackoverflow.com/questions/14343817/cran-package-depends-on-bioconductor-package-installing-error>
