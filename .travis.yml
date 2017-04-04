@@ -1,5 +1,7 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
 language: R
+bioc-packages: BiocInstaller, rhdf5, zlibbioc
 sudo: false
 cache: packages
+
