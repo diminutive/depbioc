@@ -1,5 +1,5 @@
 Package: depbioc
-Title: Depends on Bioconductor package
+Title: Depends on Bioconductor Package
 Version: 0.0.0.9000
 Authors@R: person("Michael D.","Sumner", role = c("aut", "cre"), email =
     "mdsumner@gmail.com")
